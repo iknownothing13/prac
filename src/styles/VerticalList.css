@@ -1,0 +1,22 @@
+/* VerticalList.css */
+
+.vertical-list-container {
+    max-height: 78vh;/* Adjust height as needed */
+    overflow-y: auto; /* Allow vertical scroll */
+    position: relative; /* Ensure proper positioning for scroll area */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.vertical-list-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+.vertical-list {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+
+.list-item-wrapper {
+    margin-bottom: 10px; /* Space between list items */
+}

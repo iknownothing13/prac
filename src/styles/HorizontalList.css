@@ -1,0 +1,53 @@
+/* HorizontalList.css */
+
+.horizontal-list-container {
+    overflow: hidden; /* Hide scrollbars */
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: center; /* Center the list horizontally */
+    padding: 20px 0; /* Add vertical padding if needed */
+    background-color: #f9f9f9; /* Light background color for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+.horizontal-list {
+    display: flex; /* Arrange items in a row */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.horizontal-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.list-item-wrapper {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    margin: 0 15px; /* Add spacing between items */
+    border: 1px solid #ddd; /* Border around each item */
+    border-radius: 8px; /* Rounded corners for each item */
+    background-color: #fff; /* White background for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+.list-item-wrapper:hover {
+    transform: translateY(-5px); /* Lift the item on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.list-item-content {
+    padding: 15px; /* Padding inside each item */
+    text-align: center; /* Center text within the item */
+}
+
+.horizontal-list-container hr {
+    border: 0;
+    border-top: 1px solid #ddd; /* Lighter border for hr element */
+    width: 100%;
+    margin: 10px 0; /* Add margin to separate hr from the list */
+}
